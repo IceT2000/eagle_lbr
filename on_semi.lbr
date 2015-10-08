@@ -9,20 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -59,9 +49,10 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -70,65 +61,52 @@
 </layers>
 <library>
 <packages>
-<package name="1210">
-<wire x1="-0.913" y1="1.219" x2="0.939" y2="1.219" width="0.1524" layer="51"/>
-<wire x1="-0.913" y1="-1.219" x2="0.939" y2="-1.219" width="0.1524" layer="51"/>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<text x="-1.27" y="1.651" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.921" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.651" y1="-1.3081" x2="-0.9009" y2="1.2918" layer="51"/>
-<rectangle x1="0.9144" y1="-1.3081" x2="1.6645" y2="1.2918" layer="51"/>
-<rectangle x1="-0.3" y1="-0.8999" x2="0.3" y2="0.8999" layer="35"/>
-</package>
-<package name="PM124SH">
-<smd name="1" x="-4.85" y="0.19" dx="2.9" dy="5.4" layer="1" rot="R180"/>
-<smd name="2" x="4.85" y="0.19" dx="2.9" dy="5.4" layer="1" rot="R180"/>
-<wire x1="-6.25" y1="-6.25" x2="6.25" y2="-6.25" width="0.127" layer="21"/>
-<wire x1="6.25" y1="-6.25" x2="6.25" y2="6.25" width="0.127" layer="21"/>
-<wire x1="6.25" y1="6.25" x2="-6.25" y2="6.25" width="0.127" layer="21"/>
-<wire x1="-6.25" y1="6.25" x2="-6.25" y2="-6.25" width="0.127" layer="21"/>
+<package name="SOT-533-5">
+<smd name="P1" x="-0.5" y="-0.675" dx="0.3" dy="0.45" layer="1" rot="R180"/>
+<smd name="P2" x="0" y="-0.675" dx="0.3" dy="0.45" layer="1" rot="R180"/>
+<smd name="P3" x="0.5" y="-0.675" dx="0.3" dy="0.45" layer="1" rot="R180"/>
+<smd name="P4" x="0.5" y="0.675" dx="0.3" dy="0.45" layer="1" rot="R180"/>
+<smd name="P5" x="-0.5" y="0.675" dx="0.3" dy="0.45" layer="1" rot="R180"/>
+<wire x1="-0.75" y1="0.75" x2="-1" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.75" x2="-1" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.75" x2="-0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="0.75" y1="0.75" x2="1" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1" y1="0.75" x2="1" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.75" x2="0.75" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="0.75" x2="0.25" y2="0.75" width="0.127" layer="21"/>
+<circle x="-0.75" y="-0.25" radius="0.070709375" width="0.127" layer="21"/>
+<text x="-1.25" y="1" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.25" y="-2" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="INDUCTOR">
-<wire x1="2.54" y1="5.08" x2="3.81" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="2.54" y1="2.54" x2="3.81" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="2.54" y1="2.54" x2="3.81" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="2.54" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="2.54" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="2.54" y1="-2.54" x2="3.81" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="2.54" y1="-2.54" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="2.54" y1="-5.08" x2="3.81" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
-<text x="1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="6.35" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="2.54" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="2.54" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<symbol name="NL17SZ07">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
+<pin name="VCC" x="0" y="15.24" length="middle" rot="R270"/>
+<pin name="IN" x="-15.24" y="2.54" length="middle"/>
+<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="NC" x="-15.24" y="-2.54" length="middle"/>
+<text x="5.08" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="INDUCTOR">
+<deviceset name="NL17SZ07">
 <gates>
-<gate name="G$1" symbol="INDUCTOR" x="-2.54" y="0"/>
+<gate name="G$1" symbol="NL17SZ07" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="1210">
+<device name="XV5T2G" package="SOT-533-5">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1212" package="PM124SH">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="GND" pad="P3"/>
+<connect gate="G$1" pin="IN" pad="P2"/>
+<connect gate="G$1" pin="NC" pad="P1"/>
+<connect gate="G$1" pin="OUT" pad="P4"/>
+<connect gate="G$1" pin="VCC" pad="P5"/>
 </connects>
 <technologies>
 <technology name=""/>
