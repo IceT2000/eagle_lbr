@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -125,6 +125,22 @@
 <smd name="P$2" x="3.95" y="0" dx="1.5" dy="1.2" layer="1"/>
 <text x="-2.54" y="2.54" size="0.8128" layer="21" ratio="10">&gt;NAME</text>
 </package>
+<package name="ALPS_SKTD">
+<smd name="P2" x="-1.4" y="-1.35" dx="0.7" dy="1.1" layer="1"/>
+<smd name="P1" x="1.4" y="-1.35" dx="0.7" dy="1.1" layer="1"/>
+<pad name="NC3" x="-1.85" y="0" drill="0.55" diameter="1.016" shape="square"/>
+<pad name="NC2" x="1.85" y="0" drill="0.55" diameter="1.016" shape="square"/>
+<smd name="NC1" x="0" y="-1.5" dx="1.4" dy="1.1" layer="1"/>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="1.5" x2="1" y2="0" width="0.127" layer="21"/>
+<wire x1="1" y1="0" x2="-1" y2="0" width="0.127" layer="21"/>
+<wire x1="-1" y1="0" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.75" x2="-2.25" y2="0.75" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.75" x2="2.25" y2="0.75" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-0.75" x2="2.25" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-2.25" x2="-2.25" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-2.25" y1="-2.25" x2="-2.25" y2="-0.75" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NORM_OPEN">
@@ -198,6 +214,22 @@
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPS_SKTD">
+<gates>
+<gate name="G$1" symbol="TACT_SW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPS_SKTD">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
