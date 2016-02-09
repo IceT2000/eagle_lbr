@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -59,6 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -319,6 +320,61 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 <rectangle x1="1.275" y1="-3.225" x2="4.125" y2="-1.35" layer="31" rot="R180"/>
 <rectangle x1="1.275" y1="-0.725" x2="4.125" y2="0.725" layer="31" rot="R180"/>
 <rectangle x1="1.27" y1="1.355" x2="4.12" y2="3.23" layer="31" rot="R180"/>
+</package>
+<package name="LIGHTPIPE_4">
+<hole x="-2" y="-2.54" drill="1.5"/>
+<hole x="-2" y="2.54" drill="1.5"/>
+<hole x="2" y="2.54" drill="1.5"/>
+<hole x="2" y="-2.54" drill="1.5"/>
+<wire x1="-0.45" y1="-4.187775" x2="0.45" y2="-4.187775" width="0.1016" layer="51"/>
+<wire x1="-0.45" y1="-3.387775" x2="0.45" y2="-3.387775" width="0.1016" layer="51"/>
+<smd name="L1_C" x="-0.75" y="-3.787775" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="L1_A" x="0.75" y="-3.787775" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.1" y1="-3.987775" x2="-0.2" y2="-3.587775" layer="51" rot="R90"/>
+<rectangle x1="0.2" y1="-3.987775" x2="1.1" y2="-3.587775" layer="51" rot="R90"/>
+<rectangle x1="-0.225" y1="-4.312775" x2="-0.075" y2="-4.012775" layer="21" rot="R90"/>
+<rectangle x1="-0.225" y1="-3.562775" x2="-0.075" y2="-3.262775" layer="21" rot="R90"/>
+<rectangle x1="-0.3" y1="-3.937775" x2="0" y2="-3.637775" layer="21" rot="R90"/>
+<wire x1="-0.45" y1="-1.692225" x2="0.45" y2="-1.692225" width="0.1016" layer="51"/>
+<wire x1="-0.45" y1="-0.892225" x2="0.45" y2="-0.892225" width="0.1016" layer="51"/>
+<smd name="L2_C" x="-0.75" y="-1.292225" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="L2_A" x="0.75" y="-1.292225" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.1" y1="-1.492225" x2="-0.2" y2="-1.092225" layer="51" rot="R90"/>
+<rectangle x1="0.2" y1="-1.492225" x2="1.1" y2="-1.092225" layer="51" rot="R90"/>
+<rectangle x1="-0.225" y1="-1.817225" x2="-0.075" y2="-1.517225" layer="21" rot="R90"/>
+<rectangle x1="-0.225" y1="-1.067225" x2="-0.075" y2="-0.767225" layer="21" rot="R90"/>
+<rectangle x1="-0.3" y1="-1.442225" x2="0" y2="-1.142225" layer="21" rot="R90"/>
+<wire x1="-0.45" y1="0.803325" x2="0.45" y2="0.803325" width="0.1016" layer="51"/>
+<wire x1="-0.45" y1="1.603325" x2="0.45" y2="1.603325" width="0.1016" layer="51"/>
+<smd name="L3_C" x="-0.75" y="1.203325" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="L3_A" x="0.75" y="1.203325" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.1" y1="1.003325" x2="-0.2" y2="1.403325" layer="51" rot="R90"/>
+<rectangle x1="0.2" y1="1.003325" x2="1.1" y2="1.403325" layer="51" rot="R90"/>
+<rectangle x1="-0.225" y1="0.678325" x2="-0.075" y2="0.978325" layer="21" rot="R90"/>
+<rectangle x1="-0.225" y1="1.428325" x2="-0.075" y2="1.728325" layer="21" rot="R90"/>
+<rectangle x1="-0.3" y1="1.053325" x2="0" y2="1.353325" layer="21" rot="R90"/>
+<wire x1="-0.45" y1="3.298875" x2="0.45" y2="3.298875" width="0.1016" layer="51"/>
+<wire x1="-0.45" y1="4.098875" x2="0.45" y2="4.098875" width="0.1016" layer="51"/>
+<smd name="L4_C" x="-0.75" y="3.698875" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<smd name="L4_A" x="0.75" y="3.698875" dx="0.8" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.1" y1="3.498875" x2="-0.2" y2="3.898875" layer="51" rot="R90"/>
+<rectangle x1="0.2" y1="3.498875" x2="1.1" y2="3.898875" layer="51" rot="R90"/>
+<rectangle x1="-0.225" y1="3.173875" x2="-0.075" y2="3.473875" layer="21" rot="R90"/>
+<rectangle x1="-0.225" y1="3.923875" x2="-0.075" y2="4.223875" layer="21" rot="R90"/>
+<rectangle x1="-0.3" y1="3.548875" x2="0" y2="3.848875" layer="21" rot="R90"/>
+<wire x1="-1.905" y1="3.81" x2="-1.905" y2="5.325" width="0.127" layer="21"/>
+<wire x1="1.905" y1="3.81" x2="1.905" y2="5.325" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-3.81" x2="1.905" y2="-5.325" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-3.81" x2="-1.905" y2="-5.325" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-5.325" x2="1.905" y2="-5.325" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="5.325" x2="-1.27" y2="5.325" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="5.325" x2="1.27" y2="5.325" width="0.127" layer="21"/>
+<wire x1="1.27" y1="5.325" x2="1.905" y2="5.325" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="5.325" x2="-1.27" y2="7.32" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="7.32" x2="1.27" y2="7.32" width="0.127" layer="21"/>
+<wire x1="1.27" y1="7.32" x2="1.27" y2="5.325" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -613,6 +669,31 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 <connect gate="-G" pin="C" pad="2"/>
 <connect gate="-R" pin="A" pad="4"/>
 <connect gate="-R" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIGHTPIPE_4">
+<gates>
+<gate name="G$1" symbol="LED" x="-7.62" y="0"/>
+<gate name="G$2" symbol="LED" x="2.54" y="0"/>
+<gate name="G$3" symbol="LED" x="12.7" y="0"/>
+<gate name="G$4" symbol="LED" x="22.86" y="0"/>
+</gates>
+<devices>
+<device name="" package="LIGHTPIPE_4">
+<connects>
+<connect gate="G$1" pin="A" pad="L1_A"/>
+<connect gate="G$1" pin="C" pad="L1_C"/>
+<connect gate="G$2" pin="A" pad="L2_A"/>
+<connect gate="G$2" pin="C" pad="L2_C"/>
+<connect gate="G$3" pin="A" pad="L3_A"/>
+<connect gate="G$3" pin="C" pad="L3_C"/>
+<connect gate="G$4" pin="A" pad="L4_A"/>
+<connect gate="G$4" pin="C" pad="L4_C"/>
 </connects>
 <technologies>
 <technology name=""/>
