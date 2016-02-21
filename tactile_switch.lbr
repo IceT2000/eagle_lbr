@@ -187,7 +187,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SWT6-M">
+<deviceset name="SWT6-M" prefix="SW">
 <gates>
 <gate name="G$1" symbol="NORM_OPEN" x="0" y="0"/>
 </gates>
@@ -205,7 +205,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="6X3.5_TACT">
+<deviceset name="6X3.5_TACT" prefix="SW">
 <gates>
 <gate name="G$1" symbol="TACT_SW" x="0" y="0"/>
 </gates>
@@ -221,7 +221,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="ALPS_SKTD">
+<deviceset name="ALPS_SKTD" prefix="SW">
 <gates>
 <gate name="G$1" symbol="TACT_SW" x="0" y="0"/>
 </gates>

@@ -676,7 +676,7 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LIGHTPIPE_4">
+<deviceset name="LIGHTPIPE_4" prefix="L">
 <gates>
 <gate name="G$1" symbol="LED" x="-7.62" y="0"/>
 <gate name="G$2" symbol="LED" x="2.54" y="0"/>

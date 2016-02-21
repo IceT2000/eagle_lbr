@@ -111,7 +111,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="INDUCTOR">
+<deviceset name="INDUCTOR" prefix="L">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="-2.54" y="0"/>
 </gates>
