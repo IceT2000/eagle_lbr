@@ -60,6 +60,7 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -68,6 +69,40 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Otwor_montazowy" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="DOC" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="bot_pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="fp3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="S_DOKU" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="no"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="no"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="tTestdril" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="bTestdril" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="OrgLBR" color="13" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -210,6 +245,45 @@
 <rectangle x1="-1.35" y1="-1.85" x2="-0.55" y2="-0.75" layer="29" rot="R180"/>
 <rectangle x1="-1.375" y1="-0.75" x2="-0.625" y2="0" layer="21"/>
 </package>
+<package name="TO252-5">
+<wire x1="3.177" y1="6.275" x2="3.177" y2="0.281" width="0.2032" layer="51"/>
+<wire x1="3.177" y1="0.281" x2="-3.1776" y2="0.281" width="0.2032" layer="51"/>
+<wire x1="-3.177" y1="0.28" x2="-3.177" y2="6.275" width="0.2032" layer="51"/>
+<wire x1="-3.177" y1="6.275" x2="3.177" y2="6.275" width="0.2032" layer="51"/>
+<wire x1="-3.973" y1="8.523" x2="3.973" y2="8.523" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="-3.443" x2="-3.973" y2="-3.443" width="0.0508" layer="39"/>
+<wire x1="-3.973" y1="-3.443" x2="-3.973" y2="8.523" width="0.0508" layer="39"/>
+<wire x1="3.973" y1="8.523" x2="3.973" y2="-3.443" width="0.0508" layer="39"/>
+<circle x="0" y="2.04" radius="0.7071" width="0.1524" layer="21"/>
+<smd name="6" x="0" y="5.04" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-2.26" dx="1" dy="1.6" layer="1"/>
+<smd name="5" x="2.28" y="-2.26" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="-1.14" y="-2.26" dx="1" dy="1.6" layer="1"/>
+<smd name="4" x="1.14" y="-2.26" dx="1" dy="1.6" layer="1"/>
+<text x="-3.556" y="-2.032" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.826" y="-2.032" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.58" y1="-2.51" x2="-1.98" y2="0.34" layer="21"/>
+<rectangle x1="-1.44" y1="-2.51" x2="-0.84" y2="0.34" layer="21"/>
+<rectangle x1="0.84" y1="-2.51" x2="1.44" y2="0.34" layer="21"/>
+<rectangle x1="1.98" y1="-2.51" x2="2.58" y2="0.34" layer="21"/>
+<rectangle x1="-2.73" y1="-1.06" x2="-1.83" y2="-0.26" layer="21"/>
+<rectangle x1="-1.59" y1="-1.06" x2="-0.69" y2="-0.26" layer="21"/>
+<rectangle x1="0.69" y1="-1.06" x2="1.59" y2="-0.26" layer="21"/>
+<rectangle x1="1.83" y1="-1.06" x2="2.73" y2="-0.26" layer="21"/>
+<polygon width="0.2" layer="21">
+<vertex x="-2.5654" y="6.427"/>
+<vertex x="-2.5654" y="7.2962"/>
+<vertex x="-2.032" y="7.2962"/>
+<vertex x="-2.032" y="7.112"/>
+<vertex x="2.032" y="7.112"/>
+<vertex x="2.032" y="7.2962"/>
+<vertex x="2.5654" y="7.2962"/>
+<vertex x="2.5654" y="6.427"/>
+</polygon>
+<rectangle x1="-0.3" y1="-2.51" x2="0.3" y2="0.34" layer="21"/>
+<rectangle x1="-0.45" y1="-1.06" x2="0.45" y2="-0.26" layer="21"/>
+<smd name="3" x="0" y="-2.26" dx="1" dy="1.6" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VREG-4">
@@ -312,6 +386,20 @@
 <pin name="SW" x="15.24" y="5.08" length="middle" rot="R180"/>
 <text x="-10.16" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="10.922" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC35302WD">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OUT" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="VIN" x="-17.78" y="7.62" length="middle"/>
+<pin name="ADJ" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="EN" x="-17.78" y="2.54" length="middle"/>
+<pin name="GND_PAD" x="2.54" y="-17.78" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -451,6 +539,26 @@
 <connect gate="G$1" pin="SHDN" pad="4"/>
 <connect gate="G$1" pin="SW" pad="6"/>
 <connect gate="G$1" pin="VIN" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC35302WD">
+<gates>
+<gate name="G$1" symbol="MIC35302WD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO252-5">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="5"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="GND_PAD" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
