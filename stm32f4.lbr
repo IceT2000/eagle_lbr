@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -906,6 +906,78 @@
 <pin name="VCAP_2" x="-43.18" y="38.1" length="middle"/>
 <pin name="PD2/TIM3_ETR(5T)" x="43.18" y="-45.72" length="middle" rot="R180"/>
 </symbol>
+<symbol name="COMPLETE_64_F446X">
+<wire x1="-38.1" y1="96.52" x2="38.1" y2="96.52" width="0.254" layer="94"/>
+<wire x1="38.1" y1="96.52" x2="38.1" y2="0" width="0.254" layer="94"/>
+<wire x1="38.1" y1="0" x2="-38.1" y2="0" width="0.254" layer="94"/>
+<wire x1="-38.1" y1="0" x2="-38.1" y2="96.52" width="0.254" layer="94"/>
+<text x="-38.1" y="97.79" size="1.778" layer="95">&gt;NAME</text>
+<text x="38.1" y="-1.27" size="1.778" layer="96" rot="R180">STM32F446X</text>
+<pin name="PA0/ADC123_IN0(5T)" x="-43.18" y="40.64" length="middle"/>
+<pin name="PA1/ADC123_IN1(5T)" x="-43.18" y="38.1" length="middle"/>
+<pin name="PA2/ADC123_IN2(5T)" x="-43.18" y="35.56" length="middle"/>
+<pin name="PA3/ADC123_IN3(5T)" x="-43.18" y="33.02" length="middle"/>
+<pin name="PA4/ADC12_IN4" x="-43.18" y="30.48" length="middle"/>
+<pin name="PA5/ADC12_IN5" x="-43.18" y="27.94" length="middle"/>
+<pin name="PA6/ADC12_IN6(5T)" x="-43.18" y="25.4" length="middle"/>
+<pin name="PA7/TIM1_CH1N/ADC12_IN7(FT)" x="-43.18" y="22.86" length="middle"/>
+<pin name="PA8/TIM1_CH1(5T)" x="-43.18" y="20.32" length="middle"/>
+<pin name="PA9/TIM1_CH2/USART1_TX(5T)" x="-43.18" y="17.78" length="middle"/>
+<pin name="PA10/TIM1_CH3/USART1_RX(5T)" x="-43.18" y="15.24" length="middle"/>
+<pin name="PA11/TIM1_CH4/CANRX/USBDM(5T)" x="-43.18" y="12.7" length="middle"/>
+<pin name="PA12/CANTX/USBDP(5T)" x="-43.18" y="10.16" length="middle"/>
+<pin name="PA13/JTMS-SWDAT(5T)" x="-43.18" y="7.62" length="middle"/>
+<pin name="PA14/JTCK-SWCLK(5T)" x="-43.18" y="5.08" length="middle"/>
+<pin name="PA15/JTDI(5T)" x="-43.18" y="2.54" length="middle"/>
+<pin name="PB0/TIM1_CH2N/ADC12_IN8(5T)" x="43.18" y="91.44" length="middle" rot="R180"/>
+<pin name="PB1/TIM1_CH3N/ADC12_IN9(5T)" x="43.18" y="88.9" length="middle" rot="R180"/>
+<pin name="PB2/BOOT1(5T)" x="43.18" y="86.36" length="middle" rot="R180"/>
+<pin name="PB3/JTDO(5T)" x="43.18" y="83.82" length="middle" rot="R180"/>
+<pin name="PB4/JNTRST(5T)" x="43.18" y="81.28" length="middle" rot="R180"/>
+<pin name="PB5(5T)" x="43.18" y="78.74" length="middle" rot="R180"/>
+<pin name="PB6/I2C1_SCL/USART1_TX/TIM4_CH1(5T)" x="43.18" y="76.2" length="middle" rot="R180"/>
+<pin name="PB7/I2C1_SDA/USART1_RX/TIM4_CH2(5T)" x="43.18" y="73.66" length="middle" rot="R180"/>
+<pin name="PB8/TIM10_CH1/TIM4_CH3(5T)" x="43.18" y="71.12" length="middle" rot="R180"/>
+<pin name="PB9/TIM11_CH1/TIM4_CH4(5T)" x="43.18" y="68.58" length="middle" rot="R180"/>
+<pin name="PB10/I2C2_SCL(5T)" x="43.18" y="66.04" length="middle" rot="R180"/>
+<pin name="VSS_4" x="-43.18" y="53.34" length="middle"/>
+<pin name="PB12(5T)" x="43.18" y="60.96" length="middle" rot="R180"/>
+<pin name="PB13/SPI2_SCK(5T)" x="43.18" y="58.42" length="middle" rot="R180"/>
+<pin name="PB14/SPI2_MISO(5T)" x="43.18" y="55.88" length="middle" rot="R180"/>
+<pin name="PB15/SPI2_MOSI(5T)" x="43.18" y="53.34" length="middle" rot="R180"/>
+<pin name="VBAT" x="-43.18" y="93.98" length="middle"/>
+<pin name="VDD_1" x="-43.18" y="73.66" length="middle"/>
+<pin name="VDD_2" x="-43.18" y="71.12" length="middle"/>
+<pin name="VDD_3" x="-43.18" y="68.58" length="middle"/>
+<pin name="VSS_1" x="-43.18" y="60.96" length="middle"/>
+<pin name="VSS_2" x="-43.18" y="58.42" length="middle"/>
+<pin name="VCAP_1" x="-43.18" y="88.9" length="middle"/>
+<pin name="VSSA" x="-43.18" y="78.74" length="middle"/>
+<pin name="BOOT0" x="-43.18" y="45.72" length="middle"/>
+<pin name="NRST" x="-43.18" y="48.26" length="middle"/>
+<pin name="VDDA" x="-43.18" y="81.28" length="middle"/>
+<pin name="PC13(5T)" x="43.18" y="15.24" length="middle" rot="R180"/>
+<pin name="PC14/OSC32_IN(5T)" x="43.18" y="12.7" length="middle" rot="R180"/>
+<pin name="PC15/OSC32_OUT(5T)" x="43.18" y="10.16" length="middle" rot="R180"/>
+<pin name="PH0/OSC_IN(5T)" x="43.18" y="7.62" length="middle" rot="R180"/>
+<pin name="PH1/OSC_OUT(5T)" x="43.18" y="5.08" length="middle" rot="R180"/>
+<pin name="PC0/ADC123_IN10(5T)" x="43.18" y="48.26" length="middle" rot="R180"/>
+<pin name="PC1/ADC123_IN11(5T)" x="43.18" y="45.72" length="middle" rot="R180"/>
+<pin name="PC2/ADC123_IN12(5T)" x="43.18" y="43.18" length="middle" rot="R180"/>
+<pin name="PC3/ADC123_IN13(5T)" x="43.18" y="40.64" length="middle" rot="R180"/>
+<pin name="PC4/ADC12_IN14" x="43.18" y="38.1" length="middle" rot="R180"/>
+<pin name="PC5/ADC12_IN15" x="43.18" y="35.56" length="middle" rot="R180"/>
+<pin name="PC6/TIM3_CH1/TIM_CH1/USART6_TX(5T)" x="43.18" y="33.02" length="middle" rot="R180"/>
+<pin name="PC7/TIM3_CH2/TIM8_CH2/USART6_RX(5T)" x="43.18" y="30.48" length="middle" rot="R180"/>
+<pin name="PC8/TIM3_CH3/TIM8_CH3(5T)" x="43.18" y="27.94" length="middle" rot="R180"/>
+<pin name="PC9/TIM3_CH4/TIM8_CH4(5T)" x="43.18" y="25.4" length="middle" rot="R180"/>
+<pin name="PC10(5T)" x="43.18" y="22.86" length="middle" rot="R180"/>
+<pin name="PC11(5T)" x="43.18" y="20.32" length="middle" rot="R180"/>
+<pin name="PC12(5T)" x="43.18" y="17.78" length="middle" rot="R180"/>
+<pin name="VDD_4" x="-43.18" y="66.04" length="middle"/>
+<pin name="VSS_3" x="-43.18" y="55.88" length="middle"/>
+<pin name="PD2/TIM3_ETR(5T)" x="43.18" y="2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GRPB052VWQS-RC">
@@ -1152,6 +1224,84 @@ tested: YES&lt;br&gt;</description>
 <connect gate="G$1" pin="VSSA" pad="12"/>
 <connect gate="G$1" pin="VSS_1" pad="18"/>
 <connect gate="G$1" pin="VSS_2" pad="63"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32F446X">
+<gates>
+<gate name="G$1" symbol="COMPLETE_64_F446X" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP64">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="60"/>
+<connect gate="G$1" pin="NRST" pad="7"/>
+<connect gate="G$1" pin="PA0/ADC123_IN0(5T)" pad="14"/>
+<connect gate="G$1" pin="PA1/ADC123_IN1(5T)" pad="15"/>
+<connect gate="G$1" pin="PA10/TIM1_CH3/USART1_RX(5T)" pad="43"/>
+<connect gate="G$1" pin="PA11/TIM1_CH4/CANRX/USBDM(5T)" pad="44"/>
+<connect gate="G$1" pin="PA12/CANTX/USBDP(5T)" pad="45"/>
+<connect gate="G$1" pin="PA13/JTMS-SWDAT(5T)" pad="46"/>
+<connect gate="G$1" pin="PA14/JTCK-SWCLK(5T)" pad="49"/>
+<connect gate="G$1" pin="PA15/JTDI(5T)" pad="50"/>
+<connect gate="G$1" pin="PA2/ADC123_IN2(5T)" pad="16"/>
+<connect gate="G$1" pin="PA3/ADC123_IN3(5T)" pad="17"/>
+<connect gate="G$1" pin="PA4/ADC12_IN4" pad="20"/>
+<connect gate="G$1" pin="PA5/ADC12_IN5" pad="21"/>
+<connect gate="G$1" pin="PA6/ADC12_IN6(5T)" pad="22"/>
+<connect gate="G$1" pin="PA7/TIM1_CH1N/ADC12_IN7(FT)" pad="23"/>
+<connect gate="G$1" pin="PA8/TIM1_CH1(5T)" pad="41"/>
+<connect gate="G$1" pin="PA9/TIM1_CH2/USART1_TX(5T)" pad="42"/>
+<connect gate="G$1" pin="PB0/TIM1_CH2N/ADC12_IN8(5T)" pad="26"/>
+<connect gate="G$1" pin="PB1/TIM1_CH3N/ADC12_IN9(5T)" pad="27"/>
+<connect gate="G$1" pin="PB10/I2C2_SCL(5T)" pad="29"/>
+<connect gate="G$1" pin="PB12(5T)" pad="33"/>
+<connect gate="G$1" pin="PB13/SPI2_SCK(5T)" pad="34"/>
+<connect gate="G$1" pin="PB14/SPI2_MISO(5T)" pad="35"/>
+<connect gate="G$1" pin="PB15/SPI2_MOSI(5T)" pad="36"/>
+<connect gate="G$1" pin="PB2/BOOT1(5T)" pad="28"/>
+<connect gate="G$1" pin="PB3/JTDO(5T)" pad="55"/>
+<connect gate="G$1" pin="PB4/JNTRST(5T)" pad="56"/>
+<connect gate="G$1" pin="PB5(5T)" pad="57"/>
+<connect gate="G$1" pin="PB6/I2C1_SCL/USART1_TX/TIM4_CH1(5T)" pad="58"/>
+<connect gate="G$1" pin="PB7/I2C1_SDA/USART1_RX/TIM4_CH2(5T)" pad="59"/>
+<connect gate="G$1" pin="PB8/TIM10_CH1/TIM4_CH3(5T)" pad="61"/>
+<connect gate="G$1" pin="PB9/TIM11_CH1/TIM4_CH4(5T)" pad="62"/>
+<connect gate="G$1" pin="PC0/ADC123_IN10(5T)" pad="8"/>
+<connect gate="G$1" pin="PC1/ADC123_IN11(5T)" pad="9"/>
+<connect gate="G$1" pin="PC10(5T)" pad="51"/>
+<connect gate="G$1" pin="PC11(5T)" pad="52"/>
+<connect gate="G$1" pin="PC12(5T)" pad="53"/>
+<connect gate="G$1" pin="PC13(5T)" pad="2"/>
+<connect gate="G$1" pin="PC14/OSC32_IN(5T)" pad="3"/>
+<connect gate="G$1" pin="PC15/OSC32_OUT(5T)" pad="4"/>
+<connect gate="G$1" pin="PC2/ADC123_IN12(5T)" pad="10"/>
+<connect gate="G$1" pin="PC3/ADC123_IN13(5T)" pad="11"/>
+<connect gate="G$1" pin="PC4/ADC12_IN14" pad="24"/>
+<connect gate="G$1" pin="PC5/ADC12_IN15" pad="25"/>
+<connect gate="G$1" pin="PC6/TIM3_CH1/TIM_CH1/USART6_TX(5T)" pad="37"/>
+<connect gate="G$1" pin="PC7/TIM3_CH2/TIM8_CH2/USART6_RX(5T)" pad="38"/>
+<connect gate="G$1" pin="PC8/TIM3_CH3/TIM8_CH3(5T)" pad="39"/>
+<connect gate="G$1" pin="PC9/TIM3_CH4/TIM8_CH4(5T)" pad="40"/>
+<connect gate="G$1" pin="PD2/TIM3_ETR(5T)" pad="54"/>
+<connect gate="G$1" pin="PH0/OSC_IN(5T)" pad="5"/>
+<connect gate="G$1" pin="PH1/OSC_OUT(5T)" pad="6"/>
+<connect gate="G$1" pin="VBAT" pad="1"/>
+<connect gate="G$1" pin="VCAP_1" pad="30"/>
+<connect gate="G$1" pin="VDDA" pad="13"/>
+<connect gate="G$1" pin="VDD_1" pad="19"/>
+<connect gate="G$1" pin="VDD_2" pad="32"/>
+<connect gate="G$1" pin="VDD_3" pad="48"/>
+<connect gate="G$1" pin="VDD_4" pad="64"/>
+<connect gate="G$1" pin="VSSA" pad="12"/>
+<connect gate="G$1" pin="VSS_1" pad="18"/>
+<connect gate="G$1" pin="VSS_2" pad="31"/>
+<connect gate="G$1" pin="VSS_3" pad="47"/>
+<connect gate="G$1" pin="VSS_4" pad="63"/>
 </connects>
 <technologies>
 <technology name=""/>
