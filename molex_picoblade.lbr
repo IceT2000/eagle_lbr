@@ -76,6 +76,22 @@
 <text x="4.318" y="-2.7305" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="4.318" y="2.7305" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
+<package name="MOLEX_PICOBLADE_6PIN">
+<smd name="G1" x="-5.675" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="G2" x="5.675" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="P3" x="-0.625" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+<smd name="P4" x="0.625" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+<smd name="P5" x="1.875" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+<smd name="P2" x="-1.875" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+<wire x1="-4.45" y1="2" x2="4.45" y2="2" width="0.127" layer="21"/>
+<wire x1="4.45" y1="2" x2="4.45" y2="-2" width="0.127" layer="21"/>
+<wire x1="4.45" y1="-2" x2="-4.45" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.45" y1="-2" x2="-4.45" y2="2" width="0.127" layer="21"/>
+<text x="5.568" y="-2.7305" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.568" y="2.7305" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<smd name="P1" x="-3.125" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+<smd name="P6" x="3.125" y="2.9" dx="0.8" dy="1.6" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOLEX_PICOBLADE_4PIN">
@@ -90,6 +106,20 @@
 <text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="MOLEX_PICOBLADE_6PIN">
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P1" x="-12.7" y="7.62" length="middle"/>
+<pin name="P2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P3" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P4" x="-12.7" y="-7.62" length="middle"/>
+<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P5" x="-12.7" y="-12.7" length="middle"/>
+<pin name="P6" x="-12.7" y="-17.78" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOLEX_PICOBLADE_4PIN">
@@ -103,6 +133,26 @@
 <connect gate="G$1" pin="P2" pad="P2"/>
 <connect gate="G$1" pin="P3" pad="P3"/>
 <connect gate="G$1" pin="P4" pad="P4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOLEX_PICOBLADE_6PIN">
+<gates>
+<gate name="G$1" symbol="MOLEX_PICOBLADE_6PIN" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_PICOBLADE_6PIN">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P5" pad="P5"/>
+<connect gate="G$1" pin="P6" pad="P6"/>
 </connects>
 <technologies>
 <technology name=""/>
