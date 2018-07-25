@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -376,6 +376,14 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 <wire x1="-1.27" y1="7.32" x2="1.27" y2="7.32" width="0.127" layer="21"/>
 <wire x1="1.27" y1="7.32" x2="1.27" y2="5.325" width="0.127" layer="21"/>
 </package>
+<package name="0606_RGB">
+<smd name="P2" x="0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="P1" x="-0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="P3" x="0.425" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
+<smd name="P4" x="-0.425" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
+<circle x="-1.1" y="0.7" radius="0.14141875" width="0.127" layer="21"/>
+<text x="-1.9812" y="1.6002" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -503,6 +511,76 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="RGB_LED">
+<wire x1="-3.81" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-6.35" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-7.112" y1="1.778" x2="-8.509" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="-6.985" y1="0.635" x2="-8.382" y2="-0.762" width="0.1524" layer="94"/>
+<text x="0.762" y="9.144" size="1.778" layer="95">&gt;NAME</text>
+<text x="0.762" y="6.985" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C_RED" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-8.509" y="0.381"/>
+<vertex x="-8.128" y="1.27"/>
+<vertex x="-7.62" y="0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-8.382" y="-0.762"/>
+<vertex x="-8.001" y="0.127"/>
+<vertex x="-7.493" y="-0.381"/>
+</polygon>
+<wire x1="1.27" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="1.778" x2="-3.429" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
+<pin name="C_BLUE" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="C_GREEN" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="0.381"/>
+<vertex x="-3.048" y="1.27"/>
+<vertex x="-2.54" y="0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-0.762"/>
+<vertex x="-2.921" y="0.127"/>
+<vertex x="-2.413" y="-0.381"/>
+</polygon>
+<wire x1="6.35" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="1.778" x2="1.651" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="1.778" y2="-0.762" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.651" y="0.381"/>
+<vertex x="2.032" y="1.27"/>
+<vertex x="2.54" y="0.762"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="-0.762"/>
+<vertex x="2.159" y="0.127"/>
+<vertex x="2.667" y="-0.381"/>
+</polygon>
+<pin name="A" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -694,6 +772,24 @@ Source: www.optekinc.com  .. ovstrgbbcr8.pdf</description>
 <connect gate="G$3" pin="C" pad="L3_C"/>
 <connect gate="G$4" pin="A" pad="L4_A"/>
 <connect gate="G$4" pin="C" pad="L4_C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0606_RGB">
+<gates>
+<gate name="G$1" symbol="RGB_LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0606_RGB">
+<connects>
+<connect gate="G$1" pin="A" pad="P4"/>
+<connect gate="G$1" pin="C_BLUE" pad="P3"/>
+<connect gate="G$1" pin="C_GREEN" pad="P2"/>
+<connect gate="G$1" pin="C_RED" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -751,6 +751,19 @@ MAX3223-MAX3243.pdf</description>
 <vertex x="-0.508" y="0.508"/>
 </polygon>
 </package>
+<package name="8-S0T-23">
+<smd name="P1" x="-0.975" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P2" x="-0.325" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P3" x="0.325" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P4" x="0.975" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P8" x="-0.975" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P7" x="-0.325" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P6" x="0.325" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="P5" x="0.975" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<circle x="-1.6478" y="-1.2696" radius="0.2" width="0.2" layer="21"/>
+<text x="1.732" y="3.0516" size="0.8128" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<text x="1.732" y="-2.2114" size="0.8128" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP2515">
@@ -836,6 +849,22 @@ MAX3223-MAX3243.pdf</description>
 <text x="-13.97" y="13.97" size="1.778" layer="95">&gt;NAME</text>
 <text x="-13.97" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="PAD" x="12.7" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="TCAN33X">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="GND" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="SHDN/NC" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="RXD" x="-17.78" y="0" length="middle"/>
+<pin name="TXD" x="-17.78" y="2.54" length="middle"/>
+<pin name="CANL" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="CANH" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="17.78" y="10.16" length="middle" rot="R180"/>
+<text x="-8.89" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+<text x="-8.89" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="STB/NC" x="17.78" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1088,6 +1117,28 @@ nach CiA DRP 303-1</description>
 <connect gate="G$1" pin="VDD" pad="P3"/>
 <connect gate="G$1" pin="VIO" pad="P5"/>
 <connect gate="G$1" pin="VSS" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCAN33X">
+<gates>
+<gate name="G$1" symbol="TCAN33X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8-S0T-23">
+<connects>
+<connect gate="G$1" pin="CANH" pad="P7"/>
+<connect gate="G$1" pin="CANL" pad="P6"/>
+<connect gate="G$1" pin="GND" pad="P2"/>
+<connect gate="G$1" pin="RXD" pad="P4"/>
+<connect gate="G$1" pin="SHDN/NC" pad="P5"/>
+<connect gate="G$1" pin="STB/NC" pad="P8"/>
+<connect gate="G$1" pin="TXD" pad="P1"/>
+<connect gate="G$1" pin="VCC" pad="P3"/>
 </connects>
 <technologies>
 <technology name=""/>
