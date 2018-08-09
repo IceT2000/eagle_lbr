@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -172,7 +172,7 @@
 <pad name="P1" x="-3.25" y="2.25" drill="1" shape="long" rot="R90"/>
 <pad name="P2" x="3.25" y="2.25" drill="1" shape="long" rot="R90"/>
 <pad name="P3" x="-3.25" y="-2.25" drill="1" shape="long" rot="R90"/>
-<pad name="P4" x="3.5" y="-2.25" drill="1" shape="long" rot="R90"/>
+<pad name="P4" x="3.25" y="-2.25" drill="1" shape="long" rot="R90"/>
 </package>
 </packages>
 <symbols>
